@@ -1,0 +1,13 @@
+<!-- gifs-search-box: Es quien dispara la petición para traer los gif y se debe de mostrar en gifs-card-list -->
+<!-- Para ello se debe de pensar en realizar componentes reutilizables -->
+<div class="row p-3">
+  <div class="col-12">
+    <!-- Busqueda -->
+    <gifs-search-box></gifs-search-box>
+  </div>
+
+  <div class="col-12 pt-2">
+    <!-- Listado de Gifs, aca recibimos información del padre -->
+    <gifs-card-list [gifs] = "gifs"></gifs-card-list>
+  </div>
+</div>
